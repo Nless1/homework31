@@ -1,0 +1,37 @@
+.wrap{
+  height: 100%;
+  background-color: gray;
+}
+.container{
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.title::before{
+  content: "";
+  border-radius: 5px;
+  display: block;
+  width: 10px;
+  height: 10px;
+  background-color: blue;
+  position: absolute;
+  top: 50%;
+  left: 190px;
+}
+.title{
+  font-size: 40px;
+  font-style: italic;
+}
+.title::after{
+  content: "";
+  border-radius: 5px;
+  display: block;
+  width: 10px;
+  height: 10px;
+  background-color: red;
+  position: absolute;
+  top: 50%;
+  right: 190px;
+}
